@@ -30,7 +30,7 @@ public class SwitchViewDemoActivity extends Activity implements OnViewChangeList
         init();
     }
     
-    
+ //   
 
     private void init()
     {
