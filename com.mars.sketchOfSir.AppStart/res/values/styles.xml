@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 
+	<style name="setting_title_style">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_marginLeft">9dp</item>
+		<item name="android:layout_gravity">left|center_vertical</item>
+		<item name="android:shadowColor">@color/color_white</item>
+		<item name="android:shadowRadius">1.6</item>
+        <item name="android:shadowDy">1</item>
+	</style>
+	<style name="SettingPopupTitle">
+        <item name="android:textColor">@color/color_setting_popup_title</item>
+        <item name="android:textSize">@dimen/font_size_15</item>
+    </style>
+	<style name="setting_close_btn_style">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:background">@color/color_transparent</item>
+		<item name="android:src">@drawable/drawable_popup_close_btn</item>
+	</style>
+	<style name="setting_progress_style">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:paddingLeft">15dp</item>
+		<item name="android:paddingRight">15dp</item>
+		<item name="android:thumb">@drawable/penmemo_slider_circle</item>
+		<item name="android:focusable">true</item>
+	</style>
+	<style name="setting_btn_style">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:clickable">true</item>
+		<item name="android:focusable">true</item>
+		<item name="android:foreground">@drawable/drawable_select_item_frame</item>
+    </style>
+ -->
+</resources>

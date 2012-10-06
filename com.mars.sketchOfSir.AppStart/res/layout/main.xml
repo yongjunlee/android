@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ff000000">
+	<LinearLayout
+		android:orientation="horizontal" 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		>
+		<Button
+			android:id="@+id/penBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="pen"
+			android:layout_weight="1"
+			/>
+		<Button
+			android:id="@+id/eraseBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="erase"
+			android:layout_weight="1"
+			/>
+		<Button
+			android:id="@+id/undoBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="undo"
+			android:layout_weight="1"
+			/>
+		<Button
+			android:id="@+id/redoBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="redo"
+			android:layout_weight="1"
+			/>
+	</LinearLayout>
+	<RelativeLayout 
+		android:id="@+id/canvas_container"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#ffffffff">
+		<com.samsung.sdraw.CanvasView 
+			android:id="@+id/canvas_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal" />
+		<include layout="@layout/pen_settingpopup"
+		android:layout_alignParentRight="true"
+			android:id="@+id/pen_setting"/>
+		<include layout="@layout/eraser_settingpopup"
+			android:id="@+id/eraser_setting"/>
+		<!-- 
+		<include layout="@layout/eraser_settingpopup"
+			android:id="@+id/eraser_setting"/>
+		 -->
+		<!-- 
+		<com.samsung.sdraw.SettingView 
+			android:id="@+id/setting_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#ff000000" >
+		</com.samsung.sdraw.SettingView>
+		 -->
+	</RelativeLayout>
+</LinearLayout>

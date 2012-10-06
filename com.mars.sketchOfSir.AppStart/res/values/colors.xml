@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<color name="color_transparent">#00000000</color>
+	<color name="color_black">#FF000000</color>
+	<color name="color_white">#FFFFFFFF</color>
+	<color name="color_setting_popup_title">@color/color_black</color>
+
+	<color name="color_1">@color/color_white</color>
+	<color name="color_2">#FF505050</color>
+	<color name="color_3">#FF0D6CBD</color>
+	<!-- Normal -->
+	<color name="color_5">@color/color_black</color>
+	<!-- Secondary title -->
+	<color name="color_6">@color/color_2</color>
+	<!-- Selected color -->
+	<color name="color_7">#FF007AD2</color>
+	
+	<color name="default_text_color">@color/color_black</color>
+	<color name="list_second_title_color">#FF8C8C8C</color>
+	
+	<color name="edit_actionbar_btn_color">#FF463217</color>
+	
+	<color name="color_list_actionbar_title">#FFDB9D3B</color>
+	<color name="color_edit_actionbar_title">#FF392100</color>
+	<color name="color_gallery_text_color">#FF4A4A4A</color>
+
+	<color name="dictation_result_text">@color/color_2</color>
+	<color name="title_color">#FF463217</color>
+	<color name="color_link_text_color">@color/color_3</color>
+	<color name="color_area_control">#FF463217</color>
+
+	<color name="grid_selectall_text_color">#FF164e76</color>
+	<color name="list_selectall_text_color">#FF402112</color>
+	
+	<color name="color_theme1_link_text">#FF827058</color>
+	<color name="color_theme2_link_text">#FF4B78A0</color>
+	<color name="color_theme3_link_text">#FF50B3D8</color>
+	<color name="color_theme4_link_text">#FF463217</color>
+	<color name="color_theme5_link_text">#FF463217</color>
+	
+	<color name="grid_item_color_normal">@color/color_transparent</color>
+	<color name="grid_item_color_touch">#FF429DDF</color>
+	<color name="grid_item_color_focus">#FF429DDF</color>
+	
+	<color name="grid_item_title_color">#FF1E0D05</color>
+	<color name="grid_item_title_shadow_color">#FFF5E4C5</color>
+	
+	<color name="list_item_ext_data_color">#FF505050</color>
+	<color name="list_div_line_color">#FFE6E6E6</color>
+	
+	<color name="color_view_title">#FF463217</color>
+</resources>
