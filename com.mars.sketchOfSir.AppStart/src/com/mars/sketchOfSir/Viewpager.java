@@ -28,7 +28,7 @@ public class Viewpager extends Activity {
 	private ImageView mPage2;
 	private ImageView mPage3;
 
-	@Override
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
@@ -69,27 +69,27 @@ public class Viewpager extends Activity {
         //Ìî³äViewPagerµÄÊý¾ÝÊÊÅäÆ÷
         PagerAdapter mPagerAdapter = new PagerAdapter() {
 			
-			@Override
+			
 			public boolean isViewFromObject(View arg0, Object arg1) {
 				return arg0 == arg1;
 			}
 			
-			@Override
+			
 			public int getCount() {
 				return views.size();
 			}
 
-			@Override
+			
 			public void destroyItem(View container, int position, Object object) {
 				((ViewPager)container).removeView(views.get(position));
 			}
 			
-			@Override
+			
 			public CharSequence getPageTitle(int position) {
 				return titles.get(position);
 			}
 			
-			@Override
+			
 			public Object instantiateItem(View container, int position) {
 				((ViewPager)container).addView(views.get(position));
 				return views.get(position);
@@ -101,19 +101,19 @@ public class Viewpager extends Activity {
 	
 	public class MyOnPageChangeListener implements OnPageChangeListener{
 
-		@Override
+		
 		public void onPageScrollStateChanged(int arg0) {
 			// TODO Auto-generated method stub
 			
 		}
 
-		@Override
+		
 		public void onPageScrolled(int arg0, float arg1, int arg2) {
 			// TODO Auto-generated method stub
 			
 		}
 
-		@Override
+		
 		public void onPageSelected(int arg0) {
 			// TODO Auto-generated method stub
 			Animation animation = null;

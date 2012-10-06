@@ -36,7 +36,7 @@ public class SketchOfSirActivity extends Activity implements OnClickListener {
 	public Button BH_Btn;
 	private String string;
 	
-    @Override
+    
     public void onCreate(Bundle savedInstanceState) {
     	
     	//»´∆¡œ‘ æ
@@ -61,7 +61,7 @@ public class SketchOfSirActivity extends Activity implements OnClickListener {
 		B2_Btn = (Button)nibView.findViewById(R.id.B2_Btn);
 		B2_Btn.setOnClickListener(new OnClickListener(){
 
-			@Override
+			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				skView.NibChange(6);
@@ -72,7 +72,7 @@ public class SketchOfSirActivity extends Activity implements OnClickListener {
 		B4_Btn = (Button)nibView.findViewById(R.id.B4_Btn);
 		B4_Btn.setOnClickListener(new OnClickListener(){
 
-			@Override
+			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				skView.NibChange(8);
@@ -83,7 +83,7 @@ public class SketchOfSirActivity extends Activity implements OnClickListener {
 		B6_Btn = (Button)nibView.findViewById(R.id.B6_Btn);
 		B6_Btn.setOnClickListener(new OnClickListener(){
 
-			@Override
+			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				skView.NibChange(10);
@@ -95,7 +95,7 @@ public class SketchOfSirActivity extends Activity implements OnClickListener {
 		BH_Btn = (Button)nibView.findViewById(R.id.BH_Btn);
 		BH_Btn.setOnClickListener(new OnClickListener(){
 
-			@Override
+			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				skView.NibChange(11);
@@ -106,13 +106,13 @@ public class SketchOfSirActivity extends Activity implements OnClickListener {
 		
     }
 
-    @Override
+    
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}
 	
-	@Override
+	
 	public boolean onMenuItemSelected(int featureId, MenuItem item) {
 		switch (item.getItemId()) {
 			case R.id.mi_exit :
@@ -124,7 +124,7 @@ public class SketchOfSirActivity extends Activity implements OnClickListener {
 		return super.onMenuItemSelected(featureId, item);
 	}
 
-	@Override
+	
 	public void onClick(View v) {
 		// TODO Auto-generated method stub			System.out.println("OK___!!");
 		switch (v.getId()) {

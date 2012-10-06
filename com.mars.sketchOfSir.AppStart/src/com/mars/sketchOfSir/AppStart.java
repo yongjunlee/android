@@ -12,7 +12,7 @@ import android.view.WindowManager;
 
 public class AppStart extends Activity {
 
-	@Override
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
@@ -29,7 +29,7 @@ public class AppStart extends Activity {
 		if(!isFirstIn)
 		{
 			new Handler().postDelayed(new Runnable(){
-				@Override
+				
 				public void run(){
 					Intent intent = new Intent (AppStart.this,SPen_Example_PenSettingInfoActivity.class);			
 					startActivity(intent);			
@@ -40,7 +40,7 @@ public class AppStart extends Activity {
 		else
 		 {
 			new Handler().postDelayed(new Runnable(){
-				@Override
+				
 				public void run(){
 					Intent intent = new Intent (AppStart.this,Viewpager.class);			
 					startActivity(intent);			

@@ -56,7 +56,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
     private int mButtonTextNormalColor;
 
     /** Called when the activity is first created. */
-    @Override
+    
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
@@ -246,7 +246,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
     }
 
     private OnClickListener expandButtonOnClickListener = new OnClickListener() {
-        @Override
+        
         public void onClick(View v) {
             if (mColorPicker.getVisibility() == View.GONE) {
                 expand(true);
@@ -259,7 +259,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
     };
 
     private OnClickListener undoNredoBtnClickListener = new OnClickListener() {
-        @Override
+        
         public void onClick(View v) {
             if (v == mUndoBtn) {
                 mCanvasView.undo();
@@ -287,7 +287,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
 
     OnClickListener mButtonClickListener = new OnClickListener() {
 
-        @Override
+   
         public void onClick(View v) {
             if (v == mPenBtn) {
                 mEraserSetting.setVisibility(View.GONE);
@@ -322,7 +322,6 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
 
     OnClickListener mPenTypeClickListener = new OnClickListener() {
 
-        @Override
         public void onClick(View v) {
             for (int i = 0; i < mPen.length; i++) {
                 mPen[i].setSelected(false);
@@ -342,15 +341,15 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
 
     OnSeekBarChangeListener mPenSizeChangeListener = new OnSeekBarChangeListener() {
 
-        @Override
+        
         public void onStopTrackingTouch(SeekBar seekBar) {
         }
 
-        @Override
+       
         public void onStartTrackingTouch(SeekBar seekBar) {
         }
 
-        @Override
+        
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
             mPenSettingInfo.setPenWidth(progress);
             
@@ -359,15 +358,15 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
 
     OnSeekBarChangeListener mPenAlphaChangeListener = new OnSeekBarChangeListener() {
 
-        @Override
+        
         public void onStopTrackingTouch(SeekBar seekBar) {
         }
 
-        @Override
+        
         public void onStartTrackingTouch(SeekBar seekBar) {
         }
 
-        @Override
+        
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
             mPenSettingInfo.setPenAlpha(progress);
         }
@@ -375,7 +374,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
 
     ColorSelectView.OnColorChangedListener mOnColorSelectChangedListener = new ColorSelectView.OnColorChangedListener() {
 
-        @Override
+        
         public void colorChanged(int color) {
             mPenSettingInfo.setPenColor(color);
         }
@@ -383,7 +382,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
 
     ColorPickerView.onColorChangedListener mOnColorPickerChangedListener = new ColorPickerView.onColorChangedListener() {
 
-        @Override
+        
         public void onColorChanged(int color, int x, int y) {
             mPenSettingInfo.setPenColor(color);
             if (mColorSelect != null) {
@@ -394,15 +393,15 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
 
     OnSeekBarChangeListener mEraserSizeChangeListener = new OnSeekBarChangeListener() {
 
-        @Override
+        
         public void onStopTrackingTouch(SeekBar seekBar) {
         }
 
-        @Override
+        
         public void onStartTrackingTouch(SeekBar seekBar) {
         }
 
-        @Override
+        
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
             mPenSettingInfo.setEraserWidth(progress);
         }
@@ -410,7 +409,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
 
     OnClickListener mCloseBtnClickListener = new OnClickListener() {
 
-        @Override
+        
         public void onClick(View v) {
             if (v == mPenCloseBtn) {
                 mPenSetting.setVisibility(View.GONE);
@@ -423,7 +422,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
 
     OnClickListener mClearAllListener = new OnClickListener() {
 
-        @Override
+        
         public void onClick(View v) {
             // TODO Auto-generated method stub
             mCanvasView.clearAll(true);
@@ -432,7 +431,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
 
     PenSettingInfo.OnSettingInfoChangedListener mOnSettingInfoChangedListener = new PenSettingInfo.OnSettingInfoChangedListener() {
 
-        @Override
+        
         public void onPenWidthChanged(int arg0, int arg1) {
             if (mCanvasPenPreview != null) {
                 mCanvasPenPreview.getPenSettingInfo().setPenWidth(arg0, arg1);
@@ -443,7 +442,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
 
         }
 
-        @Override
+        
         public void onPenTypeChanged(int arg0) {
             if (mCanvasPenPreview != null) {
                 mCanvasPenPreview.getPenSettingInfo().setPenType(arg0);
@@ -462,7 +461,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
             }
         }
 
-        @Override
+        
         public void onPenColorChanged(int arg0, int arg1) {
             if (mCanvasPenPreview != null) {
                 mCanvasPenPreview.getPenSettingInfo().setPenColor(arg0, arg1);
@@ -474,7 +473,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
             }
         }
 
-        @Override
+        
         public void onPenAlphaChanged(int arg0, int arg1) {
             if (mCanvasPenPreview != null) {
                 mCanvasPenPreview.getPenSettingInfo().setPenAlpha(arg0, arg1);
@@ -485,7 +484,7 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
             }
         }
 
-        @Override
+        
         public void onEraserWidthChanged(int arg0) {
             if (mPenSettingInfo != null) {
                 drawEraserCircle(mPenSettingInfo.getEraserWidth());
@@ -495,14 +494,14 @@ public class SPen_Example_PenSettingInfoActivity extends Activity {
 
     private CanvasView.OnHistoryChangeListener spriteChangeListener = new CanvasView.OnHistoryChangeListener() {
 
-        @Override
+        
         public void onHistoryChanged(boolean undoable, boolean redoable) {
             mUndoBtn.setEnabled(undoable);
             mRedoBtn.setEnabled(redoable);
         }
     };
 
-    @Override
+    
     public void finish() {
         mStrokeCircle.setImageBitmap(null);
         mEraserCircle.setImageBitmap(null);
