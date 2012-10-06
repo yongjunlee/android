@@ -1,5 +1,0 @@
-INDEX VERSION 1.126+/home/yongjunlee/Programs/eclipse-android/workspaces/.metadata/.plugins/org.eclipse.jdt.core
-2317176476.index
-4101938977.index
-2505056546.index
-340886108.index
