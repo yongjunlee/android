@@ -15,7 +15,6 @@ import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 
-import com.samsung.sdraw.example3.SPen_Example_PenSettingInfoActivity;
 
 public class Viewpager extends Activity {
 	
@@ -168,7 +167,7 @@ public class Viewpager extends Activity {
 	}
 	public void startbutton(View v) {  
       	Intent intent = new Intent();
-		intent.setClass(Viewpager.this,SPen_Example_PenSettingInfoActivity.class);
+		intent.setClass(Viewpager.this,SketchOfSirActivity.class);
 		startActivity(intent);
 		this.finish();
       }  

@@ -1,6 +1,5 @@
 package com.mars.sketchOfSir;
 
-import com.samsung.sdraw.example3.SPen_Example_PenSettingInfoActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -31,7 +30,7 @@ public class AppStart extends Activity {
 			new Handler().postDelayed(new Runnable(){
 				
 				public void run(){
-					Intent intent = new Intent (AppStart.this,SPen_Example_PenSettingInfoActivity.class);			
+					Intent intent = new Intent (AppStart.this,SketchOfSirActivity.class);			
 					startActivity(intent);			
 					AppStart.this.finish();
 				}
